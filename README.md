@@ -21,14 +21,19 @@ cd {folder_name}
 ```shell
 # 環境設定ファイルのコピー
 cp .env.example .env
+
 # composer管理されている依存パッケージのインストール
 composer install
+
 # sailの準備（ダウンロードの時間がかかります）
 php artisan sail:install
+
 # sailによるコンテナ立ち上げ
 ./vendor/bin/sail up
+
 # npm管理されている依存パッケージのインストール
 ./vendor/bin/sail npm install
+
 # viteのホットリロード環境立ち上げ
 ./vendor/bin/sail npm run dev
 ```
